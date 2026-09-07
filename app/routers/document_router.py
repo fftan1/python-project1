@@ -1,7 +1,7 @@
-from fastapi import APIRouter, Depends, HTTPException
+from fastapi import APIRouter
+
 from ..schemas import document_schema
 from ..services.document_service import DocumentService
-
 
 router = APIRouter(prefix="/documents", tags=["documents"])
 
